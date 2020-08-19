@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <meta charset="utf-8"> 
+        <title>Ejemplo del uso de formularios</title>
+    </head>
+	<body>
+	<!-- Formulario de Carga -->
+
+		<form action="procesar.php" method="post">
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre" required>
+                        <br><br>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password">
+                        <br><br>
+                        <label for="alumno">Alumno: </label>
+                        <input type="radio" name="alumno" value="Si">si
+                        <input type="radio" name="alumno" value="No">no
+                        <br><br>
+                        <label for="carrera">Carrera:</label>
+                        <select type="dropdownlist" name="carrera" value="">
+                            <option>Tsp</option>
+                            <option>Tsi</option>
+                            <option>Apicultura</option>
+                        </select>
+			<input type="submit" value="Enviar" />
+		</form>
+        </body>
+</html>

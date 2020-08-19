@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario guia 2</title>
+    </head>
+    <body>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" required>
+            <br><br>
+            <label for="direccion">Direccion: </label>
+            <input type="text" name="direccion" maxlength="50" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="text" name="email" required>
+            <br><br>
+            <label for="password">Contrasenia: </label>
+            <input type="password" name="password"required>
+            <br><br>
+
+            <br><br>
+            <label for="Sexo">Sexo: </label>
+            <input type="radio" name="Sexo" value="Varon">Varon
+            <input type="radio" name="Sexo" value="Mujer">Mujer
+            <br><br>
+
+        </form>   
+        <h1>
+            <label for="Datosadicionales">Datos adicionales: </label>
+            <input type="checkbox" name="Datosadicionales" value="Graduado en Tsp">Graduado en Tsp
+            </br> 
+            <input type="checkbox" name="Datosadicionales" value="Graduado en Tssi">Grado en Tssi
+            </br> 
+            <input type="checkbox" name="Datosadicionales" value="Bachiller">Bachiller
+            </br> 
+            <input type="checkbox" name="Datosadicionales" value="Licenciado o Doctorado">Licenciado o Doctorado
+            </br> 
+
+        </h1>
+
+        <h2>
+            <label for="Gustospropios">Gustos propios: </label>
+            <input type="checkbox" name="Gustospropios" value="Musica">Musica
+            </br> 
+            <input type="checkbox" name="Gustospropios" value="Deportes">Deportes
+            </br> 
+            <input type="checkbox" name="Gustospropios" value="Cine">Cine
+            </br> 
+            <input type="checkbox" name="Gustospropios" value="Libros">Libros
+            </br> 
+            <input type="checkbox" name="Gustospropios" value="Ciencia">Ciencia
+            </br> 
+
+        </h2>
+
+        <h3>
+            <select name="Frecuencia de la cursada">
+                <option value="Semanal"> Semanal </option>
+                <option value="Diaria"> Diaria </option>
+            </select>
+            </br>
+            <input type="submit" name="submit" value="Enviar a procesar"><input type="reset" name="reset" value="Borrar formulario">
+            </br>
+
+        </h3>
+        <style type="text/css">
+
+            form{
+                position: relative;
+                left: 260px;
+                width: 25%;
+                border:2px solid grey;
+                margin:20px;
+                padding:20px;
+
+            }
+            h1{
+                position: relative;
+                width: 25%;
+                border:2px solid grey;
+                margin:20px;
+                padding:20px;
+
+            }
+            h2{
+                position: relative;
+                top: -250px;
+                left: 520px;
+                width: 25%;
+                border:2px solid grey;
+                margin:20px;
+                padding:20px;
+
+            }
+
+            h3{
+                position: relative;
+                top: -220px;
+                width: 50%;
+                border:2px solid grey;
+                margin:20px;
+                padding:20px;
+
+            }
+        </style>
+
+    </body>
+</html>

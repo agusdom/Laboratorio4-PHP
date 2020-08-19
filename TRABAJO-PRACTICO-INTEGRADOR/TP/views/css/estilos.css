@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+html, body {
+     height: 100%;
+}
+body {
+     font-family: 'Montserrat', sans-serif;
+     background: url(../img/bg2.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+        -moz-background-size: cover;
+          -o-background-size: cover;
+             background-size: cover;
+}
+
+.height-100 {
+     height: 100%;
+}
+
+.bg-dark-alpha {
+     background-color: rgba(0,0,0,0.2);
+}
+.bg-light-alpha {
+     background-color: rgba(255,255,255,0.2);
+}
+
+.login-form {
+     width: 500px;
+     border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
+* {
+  margin: 0px;
+  padding:0px;
+ }
+ 
+ #header {
+  margin:auto;
+  width:90%;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ ul, ol {
+  list-style:none;
+ }
+ 
+ .nav > li {
+  float:left;
+
+ }
+ 
+ .nav li a {
+  background-color: #343a40;
+  color:rgba(209, 201, 201, 0.603);
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+ }
+ 
+ .nav li a:hover {
+  background-color:#686666;
+ }
+ 
+ .nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+ }
+ 
+ .nav li:hover > ul {
+  display:block;
+ }
+ 
+ .nav li ul li {
+  position:relative;
+ }
+ 
+ .nav li ul li ul {
+  right:-140px;
+  top:0px;
+ }
+
+
+
+
+ .container1
+ {
+   margin: auto;
+   width: 60%;
+  
+ }
+ 
+ .modifyList table
+ {
+   
+  border-collapse: collapse;
+  width: 100%;  
+  box-sizing: border-box;
+ }
+ 
+ .modifyList td, th
+ {
+  text-align: center;
+  padding: 10px 20px; 
+ }
+
+ .modifyList th
+ {
+    background-color: rgba(24, 20, 235, 0.6);
+    color: rgb(253, 252, 252);
+    font-weight: bold;
+    
+ }
+
+ 
+
+ .modifyList tr:nth-child(even) 
+ {
+   background-color: rgba(134, 169, 240, 0.60);
+ }
+ .modifyList tr:nth-child(odd) 
+ {
+   background-color: rgba(255, 255, 255, 0.60);
+ }
+
+ .modifyList a
+ {
+   text-decoration: none;
+   padding:7px 15px;
+   border-radius: 15px;
+    background-color:rgb(65, 65, 248);
+     color:rgb(197, 197, 197);
+ }
+ 
+ /*.modifyList a:link
+ {
+  padding:7px 15px;
+  border-radius: 15px;
+   background-color:rgb(65, 65, 248);
+    color:rgb(197, 197, 197);
+   
+ }
+
+ .modifyList a:visited
+ {
+  padding:7px 15px;
+  border-radius: 15px;
+   background-color:rgb(65, 65, 248);
+    color:rgb(197, 197, 197);
+ }*/
+
+ .modifyList a:hover
+ { 
+    color: rgb(255, 255, 255);
+    background-color:rgb(72, 72, 253);
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+ }
+
+
+ .modifyList label
+ {
+   margin: 20px 60px;
+   font-size: 25px;
+  font-weight: bold;
+  color: darkslateblue;
+ }
+
+ .modifyList input[type=submit]
+ {
+  padding:7px 30px;
+  border-radius: 15px;
+   background-color:rgb(65, 65, 248);
+    color:rgb(197, 197, 197);
+    font-weight: bold;
+    font-size: 15px;
+ }
+ .modifyList input[type=submit]:hover
+ {
+  color: rgb(255, 255, 255);
+  background-color:rgb(72, 72, 253);
+  box-shadow: 0 12px 10px -10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+  
+ }
+ .modifyList input[type=date] 
+ {
+  width: 100%;
+  /*background: transparent;*/
+  box-sizing: border-box;
+}
+
+ .modifyList input[type=text] 
+ {
+  width: 100%;
+  /*background: transparent;*/
+  box-sizing: border-box;
+}
+
+.modifyList input[type=number] 
+{
+  width: 100%;
+  /*background: transparent;*/
+  box-sizing: border-box;
+}
+/* ---------------------------- inicio radio buttom class= form-radio */ 
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 10px;
+     top: 7px;
+     content: '\02143';
+     color: rgb(60, 38, 253);
+     font-weight: bolder;
+     font-size: 15px;
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 300 16px/1.7 'Open Sans', sans-serif;
+     color: #666;
+     cursor: pointer;
+} 
+/* --------------------------- fin radio buttom class= form-radio*/
+.modifyList #select1
+{
+  width: 100%;
+  height: 30px;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+}
+
+.modifyList #select2
+{
+  /*background:none;*/
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0;
+  border-width: 2px;
+  border-style: inset;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  appearance: menulist;
+}
+
+.modifyList #importantLink
+ {
+   text-decoration: none;
+   padding:7px 15px;
+   border-radius: 15px;
+    background-color:rgb(250, 34, 34);
+     color:rgb(197, 197, 197);
+     font-weight: bold;
+      
+ }
+
+ .modifyList #importantLink:hover
+ { 
+    color: rgb(255, 255, 255);
+    background-color:rgb(248, 63, 63);
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+    
+ }
+
+ .modifyList #delete1
+ {
+   text-decoration: none;
+   padding:7px 15px;
+   border-radius: 15px;
+   background-color:rgb(230, 33, 33);
+     color:rgb(197, 197, 197);
+     
+      
+ }
+
+ .modifyList #delete1:hover
+ { 
+    color: rgb(255, 255, 255);
+    background-color:rgb(226, 59, 59);
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+    
+ }
+
+ .list
+ {
+  margin: 15px;
+   width: 100%;
+   height:30px;
+   line-height:30px;
+    text-align:center;
+    box-sizing: border-box;
+   
+
+ }
+
+ .list label
+ {
+  height:30px;
+   line-height:30px;
+    text-align:center;
+  
+   font-size: 25px;
+  font-weight: bold;
+  color: darkslateblue;
+  box-sizing: border-box;
+  
+ }
+
+
+ 

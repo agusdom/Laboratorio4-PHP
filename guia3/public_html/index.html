@@ -1,0 +1,118 @@
+
+<html>
+    <head>
+        <title>Guia 3</title>
+        <style>
+            *{
+                text-align: center;
+                /*width: 100%*/
+                box-sizing: border-box;
+            }
+            .wrapper{
+                width: 800px;
+                margin: 0 auto;
+                border: 1px;
+                border-style: solid;
+            }
+            #top{
+                border: 1px;
+                border-style: solid;
+                margin: 5px;
+            }
+            #bottom{
+                border: 1px;
+                border-style: solid;
+                margin: 5px;
+            }
+            #tabla-items{
+                margin: 15px auto;
+                border: 3px;
+                border-style: solid;
+            }
+            td{
+                border: 1px;
+                border-style: solid;
+            }
+            #detalle-factura{
+                border-radius: 3px;
+                font-size: 20px;
+                margin: auto;
+                width: 150px;
+                background-color: green;
+                color: white;
+                font-weight: bold;
+            }
+            #cabecera-factura{
+                border-radius: 3px;
+                font-size: 20px;
+                margin: auto;
+                width: 160px;
+                background-color: #8B4B9B;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+   </head>
+    <body>
+        <div class="wrapper">
+            <form action="procesar.php" method="POST" id="form1">
+                <section id="top">
+                    <div id="cabecera-factura"><p>Cabecera Factura</p></div>
+                    <label for="nombre">Nombre: </label><input type="text" name="nombre" required /> 
+                    <label for="apellido">Apellido: </label><input type="text" name="apellido" required /><br><br>
+                    <label for="DNI">DNI: </label><input type="number" name="DNI" required /> 
+                    <label for="email">Email: </label><input type="email" name="email" required /><br>
+                    <hr>
+                    <label for="fecha">Fecha: </label><input type="date" name="fecha" required /> 
+                    <label for="nroFactura">Numero Factura: </label><input type="number" name="nroFactura" required /><br><br>
+                    <input type="radio" name="tipoFactura" value="a" checked> Factura A 
+                    <input type="radio" name="tipoFactura" value="b"> Factura B
+                    <br><br>
+                </section>
+                <section id="bottom">
+                    <div id="detalle-factura"><p>Detalles Factura</p></div>
+                    <table id="tabla-items">
+                        <tr>
+                            <td>
+                                <label for="detalle1">DETALLE: </label><input type="text" name="detalle1" required />
+                                <label for="cant1">CANT: </label><input type="number" name="cant1" required /> 
+                                <label for="precio1">PRECIO: </label><input type="number" name="precio1" required /> 
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label for="detalle2">DETALLE: </label><input type="text" name="detalle2"  />
+                                    <label for="cant2">CANT: </label><input type="number" name="cant2"  /> 
+                                    <label for="precio2">PRECIO: </label><input type="number" name="precio2"  /> 
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label for="detalle3">DETALLE: </label><input type="text" name="detalle3"  />
+                                    <label for="cant3">CANT: </label><input type="number" name="cant3"  /> 
+                                    <label for="precio3">PRECIO: </label><input type="number" name="precio3"  /> 
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label for="detalle4">DETALLE: </label><input type="text" name="detalle4"  />
+                                    <label for="cant4">CANT: </label><input type="number" name="cant4"  /> 
+                                    <label for="precio4">PRECIO: </label><input type="number" name="precio4"  /> 
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label for="detalle5">DETALLE: </label><input type="text" name="detalle5"  />
+                                    <label for="cant5">CANT: </label><input type="number" name="cant5"  /> 
+                                    <label for="precio5">PRECIO: </label><input type="number" name="precio5"  /> 
+                                </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="PROCESAR" /> 
+                    <input type="reset" value="Restablecer" />
+                    <br><br>
+                </section>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Guia4</title>
+    </head>
+    <body>
+        <form action="procesar.php" method="POST" id="form1">
+            <div align="center" id="Saludando"><p>Saludando</p></div>
+            <hr>
+            <div align="center" id="Idioma"><p>SELECCIONE UN IDIOMA</p>
+            <input type="radio" name="Idioma" value="Argentino" checked> ARGENTINO
+            <input type="radio" name="Idioma" value="Ingles" > INGLES
+            <input type="radio" name="Idioma" value="Portugues" > PORTUGUES</div>
+            <hr>
+            <div align="center"  id="Hablar"><p>SELECCIONE UN ACCION</p>
+            <input type="radio" name="Hablar" value="Saludar" checked> SALUDAR
+            <input type="radio" name="Hablar" value="Despedirse" > DESPEDIRSE
+            <input type="radio" name="Hablar" value="Otro" > OTRO
+            <br></br>
+            <textarea type="text" name="massage" cols="40" rows="5" width="100" placeholder="Mensaje|Massage|Mensagem"></textarea>
+             <hr>
+              <div align="center"  id="Accion"><p>Accion</p>
+              <input type="submit" value="Procesar" ></div>
+             <hr>
+        </form>
+    </body>
+</html>
